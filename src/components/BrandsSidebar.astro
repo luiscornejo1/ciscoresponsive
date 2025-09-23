@@ -1,0 +1,19 @@
+---
+// src/components/BrandsSidebar.astro
+const marcas = [
+  { nombre: "Cisco", logo: "http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif", url: "https://www.ds3comunicaciones.com/cisco/index.html" },
+  { nombre: "MikroTik", logo: "http://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png", url: "https://www.ds3comunicaciones.com/mikrotik/index.html" },
+  // ... resto de marcas
+];
+---
+
+<aside class="hidden lg:block bg-white p-2 rounded-lg shadow-md w-full md:w-48 lg:w-56 h-[80vh] overflow-y-auto scrollbar-hide">
+  <h2 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">Nuestras Marcas</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1">
+    {marcas.map((marca) => (
+      <a href={marca.url} class="flex items-center justify-center rounded-md hover:bg-gray-100 transition-all hover:-translate-y-0.5">
+        <img src={marca.logo} alt={marca.nombre} class="max-w-[100px] max-h-8 w-auto h-auto object-contain" />
+      </a>
+    ))}
+  </div>
+</aside>

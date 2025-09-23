@@ -1,0 +1,23 @@
+---
+// src/components/Navigation.astro
+const navItems = [
+  { name: "Switch Catalyst", icon: "Switch Catalyst.ico", url: "https://www.ds3comunicaciones.com/cisco/catalys_9200l.html" },
+  { name: "Cisco Business", icon: "Cisco Business.ico", url: "https://www.ds3comunicaciones.com/cisco/bussines_sg350.html" },
+  // ... resto de items
+];
+---
+
+<nav class="bg-white border-b border-gray-200 shadow-sm">
+  <div class="relative">
+    <div class="nav-container flex justify-evenly overflow-x-auto md:py-2 px-4 space-x-2 scrollbar-hide">
+      {navItems.map((item) => (
+        <a href={item.url} class="nav-item flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5">
+          <div class="icon-container h-6 w-6 flex items-center justify-center">
+            <img src={`./icons/${item.icon}`} class="nav-icon max-h-full max-w-full" alt={item.name} />
+          </div>
+          <span class="text-xs font-medium text-gray-600 whitespace-nowrap">{item.name}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,1146 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Switch Cisco Catalyst C9200L-24P-4G-E | DS3 Comunicaciones"
+  description="Switch Cisco Catalyst C9200L-24P, capa L3 con 24 puertos Gigabit PoE+ (370W), 04 puertos para fibra SFP. Switching capacity 56 Gbps."
+  keywords="Cisco Catalyst, C9200L-24P-4G-E, switch PoE+, networking, DS3 Comunicaciones"
+>
+
+<!-- Botón Dark Mode Funcional -->
+<button 
+  id="dark-mode-toggle" 
+  class="fixed top-6 right-6 z-[9999] bg-gray-800 hover:bg-gray-700 dark:bg-yellow-500 dark:hover:bg-yellow-400 text-white dark:text-gray-900 p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 group"
+  style="z-index: 9999; position: fixed;"
+>
+  <i id="dark-mode-icon" class="fas fa-moon text-lg"></i>
+  
+  <!-- Tooltip -->
+  <span class="absolute right-16 top-1/2 transform -translate-y-1/2 bg-black dark:bg-white text-white dark:text-black px-3 py-2 rounded-lg text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none shadow-xl">
+    <span id="tooltip-text">Modo Oscuro</span>
+  </span>
+</button>
+  
+  <!-- Navegación Horizontal -->
+  <nav class="bg-gradient-to-r from-white to-gray-50 border-b border-gray-200 shadow-lg">
+    <div class="relative">
+      <div class="flex overflow-x-auto py-3 px-4 space-x-3 md:justify-center">
+        <a href="https://www.ds3comunicaciones.com/cisco/catalys_9200l.html" 
+           class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-cisco-blue transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-cisco-blue/10 rounded-lg mr-3 group-hover:bg-cisco-blue/20 transition-colors">
+            <i class="fas fa-network-wired text-cisco-blue text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-cisco-blue whitespace-nowrap">Switch Catalyst</span>
+        </a>
+        
+        <a href="https://www.ds3comunicaciones.com/cisco/bussines_sg350.html" 
+           class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-cisco-blue transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-blue-100 rounded-lg mr-3 group-hover:bg-blue-200 transition-colors">
+            <i class="fas fa-building text-blue-600 text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-blue-600 whitespace-nowrap">Cisco Business</span>
+        </a>
+        
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_switch_industrial_b.html" 
+           class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-orange-500 transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-orange-100 rounded-lg mr-3 group-hover:bg-orange-200 transition-colors">
+            <i class="fas fa-industry text-orange-600 text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-orange-600 whitespace-nowrap">Switch Industrial</span>
+        </a>
+        
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_access_point_b.html" 
+           class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-green-500 transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-green-100 rounded-lg mr-3 group-hover:bg-green-200 transition-colors">
+            <i class="fas fa-wifi text-green-600 text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-green-600 whitespace-nowrap">Aironet</span>
+        </a>
+        
+        <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_telefonos_b.html" 
+           class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-purple-500 transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-purple-100 rounded-lg mr-3 group-hover:bg-purple-200 transition-colors">
+            <i class="fas fa-phone text-purple-600 text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-purple-600 whitespace-nowrap">Teléfonos</span>
+        </a>
+        
+        <a href="https://ds3comunicaciones.com/cisco/precios_cisco_meraki_b.html" 
+           class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-indigo-500 transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-indigo-100 rounded-lg mr-3 group-hover:bg-indigo-200 transition-colors">
+            <i class="fas fa-cloud text-indigo-600 text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-indigo-600 whitespace-nowrap">Meraki</span>
+        </a>
+        
+        <a href="#" class="nav-item group flex items-center px-4 py-2 rounded-xl bg-white shadow-sm border border-gray-200 hover:shadow-md hover:border-red-500 transition-all duration-300 min-w-fit">
+          <div class="h-8 w-8 flex items-center justify-center bg-red-100 rounded-lg mr-3 group-hover:bg-red-200 transition-colors">
+            <i class="fas fa-plug text-red-600 text-sm"></i>
+          </div>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-red-600 whitespace-nowrap">Transceiver</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gradient-to-r from-gray-50 to-white border-b px-4 md:px-6 py-3">
+    <nav class="text-sm">
+      <div class="flex items-center space-x-2 text-gray-500 overflow-x-auto">
+        <a href="/" class="hover:text-cisco-blue transition-colors font-medium flex items-center">
+          <i class="fas fa-home mr-1"></i>Inicio
+        </a>
+        <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+        <a href="/products" class="hover:text-cisco-blue transition-colors font-medium">Productos</a>
+        <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+        <a href="/products/switches" class="hover:text-cisco-blue transition-colors font-medium">Switches</a>
+        <i class="fas fa-chevron-right text-gray-400 text-xs"></i>
+        <span class="text-gray-900 font-semibold">C9200L-24P-4G-E</span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Layout Principal -->
+  <div class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">
+      
+      <!-- Botones flotantes para móvil -->
+      <div class="lg:hidden fixed bottom-4 right-4 z-40 space-y-2">
+        <button id="mobile-brands-btn" class="bg-cisco-blue text-white p-3 rounded-full shadow-lg hover:bg-cisco-navy transition-colors">
+          <i class="fas fa-tags"></i>
+        </button>
+        <button id="mobile-prices-btn" class="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors">
+          <i class="fas fa-list-ul"></i>
+        </button>
+      </div>
+      
+      <!-- Grid de 3 columnas -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+        
+        <!-- Sidebar Izquierdo - Marcas -->
+        <div class="lg:col-span-2">
+          <aside id="brands-sidebar" class="lg:block hidden lg:static fixed inset-y-0 left-0 z-50 bg-white lg:bg-transparent p-4 lg:p-0 w-80 lg:w-full transform -translate-x-full lg:translate-x-0 transition-transform duration-300 overflow-y-auto">
+            <div class="bg-white rounded-xl shadow-xl lg:shadow-lg p-6 border border-gray-100 sticky top-4">
+              <div class="flex items-center justify-between lg:justify-start mb-6">
+                <h2 class="text-lg font-bold text-gray-800 flex items-center">
+                  <i class="fas fa-tags text-cisco-blue mr-2"></i>
+                  Nuestras Marcas
+                </h2>
+                <button id="close-brands" class="lg:hidden text-gray-500 hover:text-gray-700">
+                  <i class="fas fa-times text-xl"></i>
+                </button>
+              </div>
+              
+              <div class="space-y-3">
+                <a href="https://www.ds3comunicaciones.com/cisco/index.html" 
+                   class="group flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 border border-blue-200 hover:border-blue-300 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
+                  <img src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" 
+                       alt="Cisco" 
+                       class="max-w-[100px] max-h-8 object-contain group-hover:scale-105 transition-transform duration-300" />
+                </a>
+                
+                <a href="https://www.ds3comunicaciones.com/mikrotik/index.html" 
+                   class="group flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-orange-50 to-red-50 hover:from-orange-100 hover:to-red-100 border border-orange-200 hover:border-orange-300 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
+                  <img src="http://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png" 
+                       alt="MikroTik" 
+                       class="max-w-[100px] max-h-8 object-contain group-hover:scale-105 transition-transform duration-300" />
+                </a>
+                
+                <a href="https://www.ds3comunicaciones.com/ubiquiti/index.html" 
+                   class="group flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-gray-50 to-slate-50 hover:from-gray-100 hover:to-slate-100 border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
+                  <img src="http://www.ds3comunicaciones.com/belden/images/ubnt_logo-100x47.png" 
+                       alt="Ubiquiti" 
+                       class="max-w-[100px] max-h-12 object-contain group-hover:scale-105 transition-transform duration-300" />
+                </a>
+                
+                <a href="https://www.ds3comunicaciones.com/dlink/index.html" 
+                   class="group flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 border border-green-200 hover:border-green-300 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
+                  <img src="http://www.ds3comunicaciones.com/belden/images/D-Link_Logo-100x26.jpg" 
+                       alt="D-Link" 
+                       class="max-w-[100px] max-h-8 object-contain group-hover:scale-105 transition-transform duration-300" />
+                </a>
+                
+                <a href="https://www.ds3comunicaciones.com/alfa/index.html" 
+                   class="group flex items-center justify-center p-3 rounded-xl bg-gradient-to-r from-purple-50 to-violet-50 hover:from-purple-100 hover:to-violet-100 border border-purple-200 hover:border-purple-300 transition-all duration-300 hover:shadow-md transform hover:-translate-y-1">
+                  <img src="http://www.ds3comunicaciones.com/belden/images/ALFA_logo1.gif" 
+                       alt="Alfa" 
+                       class="max-w-[100px] max-h-8 object-contain group-hover:scale-105 transition-transform duration-300" />
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="lg:col-span-8">
+          <div class="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-100">
+            
+            <!-- Título del Producto -->
+            <div class="relative bg-gradient-to-r from-cisco-blue via-blue-600 to-cisco-navy text-white p-6 md:p-8 overflow-hidden">
+              <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.1&quot;><circle cx=&quot;7&quot; cy=&quot;7&quot; r=&quot;3&quot;/><circle cx=&quot;53&quot; cy=&quot;7&quot; r=&quot;3&quot;/><circle cx=&quot;7&quot; cy=&quot;53&quot; r=&quot;3&quot;/><circle cx=&quot;53&quot; cy=&quot;53&quot; r=&quot;3&quot;/></g></g></svg>');"></div>
+              </div>
+              
+              <div class="relative">
+                <div class="flex items-start justify-between mb-4">
+                  <div class="flex-1">
+                    <h1 class="text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-3">
+                      Switch Cisco Catalyst C9200L-24P
+                    </h1>
+                    <p class="text-lg md:text-xl text-blue-100 mb-2">
+                      Capa L3 con 24 puertos Gigabit PoE+ (370W)
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 text-sm text-blue-200">
+                      <span class="flex items-center">
+                        <i class="fas fa-microchip mr-2"></i>
+                        Modelo: C9200L-24P-4G-E
+                      </span>
+                      <span class="flex items-center">
+                        <i class="fas fa-bolt mr-2"></i>
+                        370W PoE+
+                      </span>
+                      <span class="flex items-center">
+                        <i class="fas fa-network-wired mr-2"></i>
+                        56 Gbps
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <!-- Badge de disponibilidad -->
+                  <div class="hidden md:block">
+                    <div class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                      <i class="fas fa-check-circle mr-2"></i>
+                      Disponible
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pestañas -->
+            <div class="border-b border-gray-200 bg-gray-50">
+              <nav class="flex">
+                <button id="product-tab" 
+                        class="flex-1 md:flex-none md:px-8 py-4 bg-white text-cisco-blue border-b-2 border-cisco-blue font-semibold transition-all duration-300 flex items-center justify-center">
+                  <i class="fas fa-info-circle mr-2"></i>
+                  <span>Producto</span>
+                </button>
+                <button id="images-tab" 
+                        class="flex-1 md:flex-none md:px-8 py-4 bg-gray-50 text-gray-600 hover:bg-white hover:text-gray-800 font-semibold transition-all duration-300 flex items-center justify-center">
+                  <i class="fas fa-images mr-2"></i>
+                  <span>Imágenes</span>
+                </button>
+              </nav>
+            </div>
+
+            <!-- Contenido de las Pestañas -->
+            <div class="p-4 md:p-6 lg:p-8">
+              
+              <!-- Sección Producto -->
+              <div id="information-section">
+                <div class="flex flex-col lg:flex-row gap-8">
+                  
+                  <!-- Galería de Imágenes -->
+                  <div class="lg:w-1/2">
+                    <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                      
+                      <!-- Imagen principal -->
+                      <div class="relative group mb-4">
+                        <div class="w-full h-[400px] md:h-[450px] flex items-center justify-center overflow-hidden rounded-xl bg-white shadow-inner border-2 border-gray-100 relative">
+                          <img 
+                            id="img_main"
+                            src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front.jpg"
+                            alt="Switch Cisco Catalyst C9200L-24P-4G-E"
+                            class="max-h-full max-w-full object-contain cursor-pointer transition-all duration-500 group-hover:scale-105"
+                            onclick="viewImage(this.src)"
+                          />
+                          
+                          <!-- Badge de "Vista Principal" -->
+                          <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-eye mr-1"></i>
+                            Vista Principal
+                          </div>
+                          
+                          <!-- Overlay con botón de zoom -->
+                          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl flex items-center justify-center">
+                            <button onclick="viewImage(document.getElementById('img_main').src)" 
+                                    class="bg-white text-blue-600 px-6 py-3 rounded-full opacity-0 group-hover:opacity-100 transform scale-90 group-hover:scale-100 transition-all duration-300 shadow-lg font-semibold hover:bg-blue-50">
+                              <i class="fas fa-search-plus mr-2"></i>
+                              Ver en Grande
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Información rápida -->
+                      <div class="text-center mb-4">
+                        <p class="text-gray-600 text-sm">
+                          <i class="fas fa-info-circle mr-1 text-blue-500"></i>
+                          Haz clic en las miniaturas para cambiar la vista
+                        </p>
+                      </div>
+                      
+                      <!-- Miniaturas -->
+                      <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center">
+                          <div class="thumbnail-container w-full aspect-square border-2 border-blue-500 rounded-xl p-2 cursor-pointer hover:border-blue-600 hover:shadow-lg transition-all duration-300 bg-white transform hover:-translate-y-1">
+                            <img 
+                              src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front.jpg"
+                              alt="Vista frontal"
+                              class="w-full h-full object-contain"
+                              onclick="toExchangeImage(this)"
+                            />
+                          </div>
+                          <p class="text-xs text-center mt-2 text-gray-700 font-medium">Vista Frontal</p>
+                          <p class="text-xs text-center text-gray-500">Puertos PoE+</p>
+                        </div>
+                        
+                        <div class="text-center">
+                          <div class="thumbnail-container w-full aspect-square border border-gray-300 rounded-xl p-2 cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300 bg-white transform hover:-translate-y-1">
+                            <img 
+                              src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front_large.jpg"
+                              alt="Vista frontal amplia"
+                              class="w-full h-full object-contain"
+                              onclick="toExchangeImage(this)"
+                            />
+                          </div>
+                          <p class="text-xs text-center mt-2 text-gray-700 font-medium">Vista Detallada</p>
+                          <p class="text-xs text-center text-gray-500">Conexiones SFP</p>
+                        </div>
+                        
+                        <div class="text-center">
+                          <div class="thumbnail-container w-full aspect-square border border-gray-300 rounded-xl p-2 cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300 bg-white transform hover:-translate-y-1">
+                            <img 
+                              src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_back.jpg"
+                              alt="Vista posterior"
+                              class="w-full h-full object-contain"
+                              onclick="toExchangeImage(this)"
+                            />
+                          </div>
+                          <p class="text-xs text-center mt-2 text-gray-700 font-medium">Vista Posterior</p>
+                          <p class="text-xs text-center text-gray-500">Ventilación</p>
+                        </div>
+                      </div>
+                      
+                      <!-- Información técnica -->
+                      <div class="mt-6 bg-blue-50 rounded-xl p-4 border border-blue-200">
+                        <h4 class="font-semibold text-blue-800 mb-2 flex items-center">
+                          <i class="fas fa-lightbulb mr-2"></i>
+                          Información del Producto
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                          <div>
+                            <span class="text-blue-600 font-medium">Dimensiones:</span>
+                            <p class="text-gray-700">44.5 x 26.9 x 4.4 cm</p>
+                          </div>
+                          <div>
+                            <span class="text-blue-600 font-medium">Peso:</span>
+                            <p class="text-gray-700">3.2 kg</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Información del Producto -->
+                  <div class="lg:w-1/2">
+                    <div class="space-y-6">
+                      
+                      <!-- Precio -->
+                      <div class="relative overflow-hidden bg-gradient-to-r from-green-50 via-emerald-50 to-teal-50 border-2 border-green-200 rounded-2xl p-6 shadow-lg">
+                        <div class="absolute top-0 right-0 w-20 h-20 transform rotate-45 translate-x-10 -translate-y-10 bg-green-200 opacity-20"></div>
+                        <div class="relative">
+                          <div class="flex items-center justify-between mb-2">
+                            <span class="text-green-600 font-semibold text-sm uppercase tracking-wide">Precio Especial</span>
+                            <i class="fas fa-tag text-green-500 text-xl"></i>
+                          </div>
+                          <div class="text-4xl md:text-5xl font-bold text-green-700 mb-1">U$ 1,979</div>
+                          <p class="text-green-600 text-sm font-medium">Incluye garantía y soporte técnico</p>
+                        </div>
+                      </div>
+                      
+                      <!-- Botones de acción -->
+                      <div class="space-y-3">
+                        <button class="w-full bg-gradient-to-r from-cisco-blue to-blue-600 hover:from-cisco-navy hover:to-blue-700 text-white py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center">
+                          <i class="fas fa-cart-plus mr-3"></i>
+                          Solicitar Cotización
+                        </button>
+                        
+                        <div class="grid grid-cols-2 gap-3">
+                          <button class="bg-white border-2 border-cisco-blue text-cisco-blue py-3 rounded-xl font-semibold hover:bg-cisco-blue hover:text-white transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-heart mr-2"></i>
+                            Favoritos
+                          </button>
+                          <button class="bg-white border-2 border-gray-300 text-gray-700 py-3 rounded-xl font-semibold hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 flex items-center justify-center">
+                            <i class="fas fa-share-alt mr-2"></i>
+                            Compartir
+                          </button>
+                        </div>
+                      </div>
+                      
+                      <!-- Características destacadas -->
+                      <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                          <i class="fas fa-star text-yellow-500 mr-2"></i>
+                          Características Destacadas
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div class="flex items-center space-x-3 p-3 bg-white rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                              <i class="fas fa-layer-group text-blue-600"></i>
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800 text-sm">Layer 3</p>
+                            </div>
+                          </div>
+                          
+                          <div class="flex items-center space-x-3 p-3 bg-white rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                              <i class="fas fa-bolt text-green-600"></i>
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800 text-sm">PoE+ 370W</p>
+                            </div>
+                          </div>
+                          
+                          <div class="flex items-center space-x-3 p-3 bg-white rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+                              <i class="fas fa-ethernet text-purple-600"></i>
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800 text-sm">24 Puertos</p>
+                            </div>
+                          </div>
+                          
+                          <div class="flex items-center space-x-3 p-3 bg-white rounded-xl shadow-sm">
+                            <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                              <i class="fas fa-wifi text-orange-600"></i>
+                            </div>
+                            <div>
+                              <p class="font-semibold text-gray-800 text-sm">4 SFP</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Especificaciones técnicas -->
+                      <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+                        <button class="w-full px-6 py-4 text-left bg-gradient-to-r from-gray-50 to-gray-100 hover:from-gray-100 hover:to-gray-200 transition-colors flex items-center justify-between group" onclick="toggleSpecs()">
+                          <h3 class="text-lg font-bold text-gray-800 flex items-center">
+                            <i class="fas fa-cogs text-blue-600 mr-3"></i>
+                            Especificaciones Técnicas
+                          </h3>
+                          <div class="flex items-center space-x-2">
+                            <span class="text-sm text-gray-500 group-hover:text-gray-700">Ver detalles</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-gray-500 group-hover:text-gray-700" id="specs-arrow"></i>
+                          </div>
+                        </button>
+                        
+                        <div id="specs-content" class="max-h-0 overflow-hidden transition-all duration-500">
+                          <div class="p-6 border-t border-gray-200 bg-gray-50">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                              <div>
+                                <h4 class="font-semibold text-gray-800 mb-3">General</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                  <li><strong>Puertos:</strong> 24x Gigabit PoE+</li>
+                                  <li><strong>Uplinks:</strong> 4x SFP</li>
+                                  <li><strong>PoE:</strong> 370W total</li>
+                                  <li><strong>Switching:</strong> 56 Gbps</li>
+                                </ul>
+                              </div>
+                              <div>
+                                <h4 class="font-semibold text-gray-800 mb-3">Físico</h4>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                  <li><strong>Dimensiones:</strong> 44.5 x 26.9 x 4.4 cm</li>
+                                  <li><strong>Peso:</strong> 3.2 kg</li>
+                                  <li><strong>Rack:</strong> 1U</li>
+                                  <li><strong>Temperatura:</strong> 0° a 45°C</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Descargas -->
+                      <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+                        <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center">
+                          <i class="fas fa-download text-cisco-blue mr-2"></i>
+                          Documentación
+                        </h3>
+                        <div class="space-y-3">
+                          <a href="https://www.ds3comunicaciones.com/cisco/files/catalyst_9200.pdf" 
+                             class="group flex items-center space-x-4 p-4 bg-gradient-to-r from-red-50 to-pink-50 hover:from-red-100 hover:to-pink-100 rounded-xl border border-red-200 hover:border-red-300 transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center group-hover:bg-red-200 transition-colors">
+                              <i class="fas fa-file-pdf text-red-500"></i>
+                            </div>
+                            <div class="flex-1">
+                              <p class="font-semibold text-gray-800">Datasheet</p>
+                              <p class="text-sm text-gray-600">Especificaciones completas</p>
+                            </div>
+                            <i class="fas fa-download text-red-500 group-hover:text-red-600"></i>
+                          </a>
+                          
+                          <a href="https://web.netperu100.com/cisco/catalyst/files/Catalyst_9200_manual.pdf" 
+                             class="group flex items-center space-x-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                              <i class="fas fa-book text-blue-500"></i>
+                            </div>
+                            <div class="flex-1">
+                              <p class="font-semibold text-gray-800">Manual</p>
+                              <p class="text-sm text-gray-600">Guía de configuración</p>
+                            </div>
+                            <i class="fas fa-download text-blue-500 group-hover:text-blue-600"></i>
+                          </a>
+                          
+                          <a href="https://web.netperu100.com/cisco/catalyst/files/C9200L-24P-4G-E_esp.pdf" 
+                             class="group flex items-center space-x-4 p-4 bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 rounded-xl border border-green-200 hover:border-green-300 transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                              <i class="fas fa-file-alt text-green-500"></i>
+                            </div>
+                            <div class="flex-1">
+                              <p class="font-semibold text-gray-800">Ficha Técnica</p>
+                              <p class="text-sm text-gray-600">Resumen en español</p>
+                            </div>
+                            <i class="fas fa-download text-green-500 group-hover:text-green-600"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sección Imágenes -->
+              <div id="images-section" class="hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="aspect-w-16 aspect-h-12 bg-gray-50 p-4">
+                      <img 
+                        src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front.jpg"
+                        alt="Vista frontal del switch"
+                        class="w-full h-48 object-contain cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                        onclick="viewImage(this.src)"
+                      />
+                    </div>
+                    <div class="p-4 bg-gradient-to-br from-white to-gray-50">
+                      <h4 class="font-semibold text-gray-800 mb-2">Vista Frontal</h4>
+                      <p class="text-sm text-gray-600 mb-3">Panel frontal con puertos PoE+</p>
+                      <button onclick="viewImage(this.parentElement.previousElementSibling.querySelector('img').src)" 
+                              class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg">
+                        <i class="fas fa-expand-alt mr-2"></i>Ver en Grande
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="aspect-w-16 aspect-h-12 bg-gray-50 p-4">
+                      <img 
+                        src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_front_large.jpg"
+                        alt="Vista frontal amplia del switch"
+                        class="w-full h-48 object-contain cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                        onclick="viewImage(this.src)"
+                      />
+                    </div>
+                    <div class="p-4 bg-gradient-to-br from-white to-gray-50">
+                      <h4 class="font-semibold text-gray-800 mb-2">Vista Detallada</h4>
+                      <p class="text-sm text-gray-600 mb-3">Detalle de puertos y conexiones</p>
+                      <button onclick="viewImage(this.parentElement.previousElementSibling.querySelector('img').src)" 
+                              class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg">
+                        <i class="fas fa-expand-alt mr-2"></i>Ver en Grande
+                      </button>
+                    </div>
+                  </div>
+                  
+                  <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="aspect-w-16 aspect-h-12 bg-gray-50 p-4">
+                      <img 
+                        src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24P-4G-E_back.jpg"
+                        alt="Vista posterior del switch"
+                        class="w-full h-48 object-contain cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                        onclick="viewImage(this.src)"
+                      />
+                    </div>
+                    <div class="p-4 bg-gradient-to-br from-white to-gray-50">
+                      <h4 class="font-semibold text-gray-800 mb-2">Vista Posterior</h4>
+                      <p class="text-sm text-gray-600 mb-3">Panel posterior y ventilación</p>
+                      <button onclick="viewImage(this.parentElement.previousElementSibling.querySelector('img').src)" 
+                              class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-lg">
+                        <i class="fas fa-expand-alt mr-2"></i>Ver en Grande
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Derecho - Listas de Precios -->
+        <div class="lg:col-span-2">
+          <aside id="prices-sidebar" class="lg:block hidden lg:static fixed inset-y-0 right-0 z-50 bg-white lg:bg-transparent p-4 lg:p-0 w-80 lg:w-full transform translate-x-full lg:translate-x-0 transition-transform duration-300 overflow-y-auto">
+            <div class="bg-white rounded-xl shadow-xl lg:shadow-lg p-6 border border-gray-100 sticky top-4">
+              <div class="flex items-center justify-between lg:justify-start mb-6">
+                <h2 class="text-lg font-bold text-gray-800 flex items-center">
+                  <i class="fas fa-list-ul text-green-600 mr-2"></i>
+                  Listas de Precios
+                </h2>
+                <button id="close-prices" class="lg:hidden text-gray-500 hover:text-gray-700 transition-colors">
+                  <i class="fas fa-times text-xl"></i>
+                </button>
+              </div>
+              
+              <div class="space-y-3">
+                <!-- CISCO -->
+                <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco.html" 
+                   class="group block p-3 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 rounded-xl border border-blue-200 hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md">
+                  <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors flex-shrink-0">
+                      <i class="fas fa-list-ul text-blue-600 text-xs"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-semibold text-blue-700 group-hover:text-blue-800 text-sm">CISCO</p>
+                      <p class="text-blue-600 text-xs truncate">Lista completa</p>
+                    </div>
+                    <i class="fas fa-external-link-alt text-blue-500 text-xs group-hover:text-blue-600 flex-shrink-0"></i>
+                  </div>
+                </a>
+                
+                <!-- MikroTik -->
+                <a href="https://www.ds3comunicaciones.com/mikrotik/precios_mikrotik.html" 
+                   class="group block p-3 bg-gradient-to-r from-orange-50 to-red-50 hover:from-orange-100 hover:to-red-100 rounded-xl border border-orange-200 hover:border-orange-300 transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md">
+                  <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors flex-shrink-0">
+                      <i class="fas fa-list-ul text-orange-600 text-xs"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-semibold text-orange-700 group-hover:text-orange-800 text-sm">MikroTik</p>
+                      <p class="text-orange-600 text-xs truncate">Precios actualizados</p>
+                    </div>
+                    <i class="fas fa-external-link-alt text-orange-500 text-xs group-hover:text-orange-600 flex-shrink-0"></i>
+                  </div>
+                </a>
+                
+                <!-- D-Link -->
+                <a href="https://www.ds3comunicaciones.com/dlink/precios_dlink.html" 
+                   class="group block p-3 bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 rounded-xl border border-green-200 hover:border-green-300 transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md">
+                  <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors flex-shrink-0">
+                      <i class="fas fa-list-ul text-green-600 text-xs"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-semibold text-green-700 group-hover:text-green-800 text-sm">D-Link</p>
+                      <p class="text-green-600 text-xs truncate">Catálogo completo</p>
+                    </div>
+                    <i class="fas fa-external-link-alt text-green-500 text-xs group-hover:text-green-600 flex-shrink-0"></i>
+                  </div>
+                </a>
+                
+                <!-- AMP -->
+                <a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" 
+                   class="group block p-3 bg-gradient-to-r from-purple-50 to-violet-50 hover:from-purple-100 hover:to-violet-100 rounded-xl border border-purple-200 hover:border-purple-300 transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-md">
+                  <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-colors flex-shrink-0">
+                      <i class="fas fa-list-ul text-purple-600 text-xs"></i>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <p class="font-semibold text-purple-700 group-hover:text-purple-800 text-sm">AMP</p>
+                      <p class="text-purple-600 text-xs truncate">Conectividad</p>
+                    </div>
+                    <i class="fas fa-external-link-alt text-purple-500 text-xs group-hover:text-purple-600 flex-shrink-0"></i>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Información adicional -->
+              <div class="mt-4 bg-gray-50 rounded-xl p-3 border border-gray-200">
+                <p class="text-gray-600 text-xs leading-relaxed">
+                  Precios incluyen garantía y soporte técnico.
+                </p>
+                <div class="mt-2">
+                  <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
+                    <i class="fas fa-check mr-1"></i>
+                    Actualizados
+                  </span>
+                </div>
+              </div>
+
+              <!-- Botón de contacto -->
+              <button class="w-full mt-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-2 px-3 rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl text-sm">
+                <i class="fas fa-phone-alt mr-2"></i>
+                Consultar
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay para móvil -->
+  <div id="mobile-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+
+  <!-- Modal para Imágenes -->
+  <div id="image-modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black bg-opacity-90 backdrop-blur-sm">
+    <div class="relative max-w-6xl max-h-[95vh] m-4 flex items-center justify-center">
+      <!-- Botón cerrar -->
+      <button onclick="closeModal()" 
+              class="absolute -top-4 -right-4 bg-white text-gray-800 rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100 transition-all duration-300 shadow-xl z-10 transform hover:scale-110">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+      
+      <!-- Imagen del modal -->
+      <img id="modal-image" 
+           src="" 
+           alt="Imagen ampliada" 
+           class="max-w-full max-h-full object-contain rounded-2xl shadow-2xl" />
+      
+      <!-- Información adicional -->
+      <div class="absolute bottom-4 left-4 right-4 bg-white bg-opacity-90 backdrop-blur-sm rounded-xl p-4 text-center">
+        <p class="text-gray-800 font-semibold">Switch Cisco Catalyst C9200L-24P-4G-E</p>
+        <p class="text-sm text-gray-600 mt-1">Haz clic fuera de la imagen para cerrar</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS adicional -->
+  <style>
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script is:inline>
+    // Función para cambiar imagen principal
+    function toExchangeImage(img) {
+      const mainImg = document.getElementById('img_main');
+      if (mainImg && img.src) {
+        mainImg.src = img.src;
+        
+        // Actualizar bordes de miniaturas
+        document.querySelectorAll('.thumbnail-container').forEach(container => {
+          container.classList.remove('border-blue-500');
+          container.classList.add('border-gray-300');
+        });
+        
+        // Marcar la miniatura actual
+        const container = img.closest('.thumbnail-container');
+        if (container) {
+          container.classList.remove('border-gray-300');
+          container.classList.add('border-blue-500');
+        }
+      }
+    }
+
+    // Función para ver imagen en modal
+    function viewImage(src) {
+      const modal = document.getElementById('image-modal');
+      const modalImage = document.getElementById('modal-image');
+      
+      if (modal && modalImage && src) {
+        modalImage.src = src;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Función para cerrar modal
+    function closeModal() {
+      const modal = document.getElementById('image-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Función para alternar especificaciones
+    function toggleSpecs() {
+      const content = document.getElementById('specs-content');
+      const arrow = document.getElementById('specs-arrow');
+      
+      if (content && arrow) {
+        if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+          content.style.maxHeight = '0px';
+          arrow.style.transform = 'rotate(0deg)';
+        } else {
+          content.style.maxHeight = content.scrollHeight + 'px';
+          arrow.style.transform = 'rotate(180deg)';
+        }
+      }
+    }
+
+    // Inicialización cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', function() {
+      // Manejo de pestañas
+      const productTab = document.getElementById('product-tab');
+      const imagesTab = document.getElementById('images-tab');
+      const informationSection = document.getElementById('information-section');
+      const imagesSection = document.getElementById('images-section');
+      
+      productTab?.addEventListener('click', function() {
+        informationSection?.classList.remove('hidden');
+        imagesSection?.classList.add('hidden');
+        
+        productTab.classList.add('bg-white', 'text-cisco-blue', 'border-cisco-blue');
+        productTab.classList.remove('bg-gray-50', 'text-gray-600');
+        
+        imagesTab.classList.add('bg-gray-50', 'text-gray-600');
+        imagesTab.classList.remove('bg-white', 'text-cisco-blue', 'border-cisco-blue');
+      });
+      
+      imagesTab?.addEventListener('click', function() {
+        informationSection?.classList.add('hidden');
+        imagesSection?.classList.remove('hidden');
+        
+        imagesTab.classList.add('bg-white', 'text-cisco-blue', 'border-cisco-blue');
+        imagesTab.classList.remove('bg-gray-50', 'text-gray-600');
+        
+        productTab.classList.add('bg-gray-50', 'text-gray-600');
+        productTab.classList.remove('bg-white', 'text-cisco-blue', 'border-cisco-blue');
+      });
+
+      // Manejo de sidebars móviles
+      const mobileBrandsBtn = document.getElementById('mobile-brands-btn');
+      const mobilePricesBtn = document.getElementById('mobile-prices-btn');
+      const brandsSidebar = document.getElementById('brands-sidebar');
+      const pricesSidebar = document.getElementById('prices-sidebar');
+      const mobileOverlay = document.getElementById('mobile-overlay');
+      const closeBrands = document.getElementById('close-brands');
+      const closePrices = document.getElementById('close-prices');
+
+      mobileBrandsBtn?.addEventListener('click', function() {
+        brandsSidebar?.classList.remove('-translate-x-full');
+        brandsSidebar?.classList.add('translate-x-0');
+        mobileOverlay?.classList.remove('hidden');
+      });
+
+      mobilePricesBtn?.addEventListener('click', function() {
+        pricesSidebar?.classList.remove('translate-x-full');
+        pricesSidebar?.classList.add('translate-x-0');
+        mobileOverlay?.classList.remove('hidden');
+      });
+
+      closeBrands?.addEventListener('click', function() {
+        brandsSidebar?.classList.add('-translate-x-full');
+        brandsSidebar?.classList.remove('translate-x-0');
+        mobileOverlay?.classList.add('hidden');
+      });
+
+      closePrices?.addEventListener('click', function() {
+        pricesSidebar?.classList.add('translate-x-full');
+        pricesSidebar?.classList.remove('translate-x-0');
+        mobileOverlay?.classList.add('hidden');
+      });
+
+      mobileOverlay?.addEventListener('click', function() {
+        brandsSidebar?.classList.add('-translate-x-full');
+        pricesSidebar?.classList.add('translate-x-full');
+        mobileOverlay?.classList.add('hidden');
+      });
+
+      // Cerrar modal al hacer clic fuera de la imagen
+      const modal = document.getElementById('image-modal');
+      modal?.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Cerrar modal con tecla Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    });
+  </script>
+
+    <!-- Footer Moderno -->
+  <footer class="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white mt-16">
+    <!-- Contenido principal del footer -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Logo y Descripción de la Empresa -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center mb-4">
+            <!-- Logo DS3 -->
+            <div class="bg-gradient-to-r from-blue-400 to-blue-600 p-3 rounded-xl mr-4">
+              <span class="text-2xl font-bold text-white">DS3</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white">Comunicaciones</h3>
+              <p class="text-blue-300 text-sm">Soluciones en Redes</p>
+            </div>
+          </div>
+          <p class="text-gray-300 text-sm mb-4 leading-relaxed">
+            Líderes en soluciones de redes y comunicaciones. Ofrecemos productos de alta calidad para WiFi, extensión de señal y infraestructura de red.
+          </p>
+          
+          <!-- Redes Sociales -->
+          <div class="mb-6">
+            <h4 class="text-white font-semibold mb-3 flex items-center">
+              <i class="fas fa-share-alt text-blue-400 mr-2"></i>
+              Redes Sociales
+            </h4>
+            <div class="flex space-x-3">
+              <a href="#" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              <a href="#" class="bg-green-600 hover:bg-green-700 p-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                <i class="fab fa-whatsapp text-white"></i>
+              </a>
+              <a href="#" class="bg-blue-400 hover:bg-blue-500 p-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              <a href="#" class="bg-blue-700 hover:bg-blue-800 p-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Correo -->
+          <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+            <h4 class="text-white font-semibold mb-2 flex items-center">
+              <i class="fas fa-envelope text-blue-400 mr-2"></i>
+              Correo
+            </h4>
+            <a href="mailto:netperu100@hotmail.com" class="text-blue-300 hover:text-blue-200 transition-colors text-sm flex items-center">
+              <i class="fas fa-paper-plane mr-2"></i>
+              netperu100@hotmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Soluciones -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+            <i class="fas fa-cogs text-blue-400 mr-2"></i>
+            Soluciones
+          </h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="https://www.ds3comunicaciones.com/cisco/precios_cisco_access_point_b.html" 
+                 class="text-gray-300 hover:text-blue-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-wifi text-blue-400 mr-3 group-hover:text-blue-300"></i>
+                <span>Access Point</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-blue-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-broadcast-tower text-green-400 mr-3 group-hover:text-green-300"></i>
+                <span>Antenas MIMO</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-blue-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-tablet-alt text-orange-400 mr-3 group-hover:text-orange-300"></i>
+                <span>Antenas de Panel</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-blue-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-satellite-dish text-purple-400 mr-3 group-hover:text-purple-300"></i>
+                <span>Antenas Sectoriales</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-blue-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-ethernet text-red-400 mr-3 group-hover:text-red-300"></i>
+                <span>Cable Pigtail</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-blue-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-exchange-alt text-indigo-400 mr-3 group-hover:text-indigo-300"></i>
+                <span>Media Converter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Soporte -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+            <i class="fas fa-headset text-green-400 mr-2"></i>
+            Soporte
+          </h3>
+          <ul class="space-y-3 mb-6">
+            <li>
+              <a href="#" class="text-gray-300 hover:text-green-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-tools text-green-400 mr-3 group-hover:text-green-300"></i>
+                <span>Soporte Técnico</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-green-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-users text-blue-400 mr-3 group-hover:text-blue-300"></i>
+                <span>Acerca de Nosotros</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-green-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-file-contract text-yellow-400 mr-3 group-hover:text-yellow-300"></i>
+                <span>Términos y Condiciones</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-300 hover:text-green-300 transition-colors text-sm flex items-center group">
+                <i class="fas fa-shield-alt text-red-400 mr-3 group-hover:text-red-300"></i>
+                <span>Política de Privacidad</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Certificaciones -->
+          <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+            <h4 class="text-white font-semibold mb-3 flex items-center">
+              <i class="fas fa-certificate text-yellow-400 mr-2"></i>
+              Certificaciones
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">ISO 9001</span>
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Cisco Partner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+            <i class="fas fa-phone-alt text-blue-400 mr-2"></i>
+            Contacto
+          </h3>
+          
+          <!-- Teléfonos -->
+          <div class="space-y-4 mb-6">
+            <div class="bg-blue-900 bg-opacity-50 rounded-xl p-4 border border-blue-800">
+              <h4 class="text-blue-300 font-semibold mb-2 text-sm">Líneas de Atención</h4>
+              <div class="space-y-2">
+                <a href="tel:994428965" class="text-white hover:text-blue-300 transition-colors flex items-center group">
+                  <i class="fas fa-mobile-alt text-blue-400 mr-3 group-hover:text-blue-300"></i>
+                  <span class="font-semibold">994 428 965</span>
+                </a>
+                <a href="tel:996533223" class="text-white hover:text-blue-300 transition-colors flex items-center group">
+                  <i class="fas fa-mobile-alt text-green-400 mr-3 group-hover:text-green-300"></i>
+                  <span class="font-semibold">996 533 223</span>
+                </a>
+              </div>
+            </div>
+            
+            <!-- Horario -->
+            <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+              <h4 class="text-white font-semibold mb-3 flex items-center">
+                <i class="fas fa-clock text-orange-400 mr-2"></i>
+                Horario de Atención
+              </h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-300">Lunes a Viernes:</span>
+                  <span class="text-white font-semibold">9:00 - 18:00</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-300">Sábados:</span>
+                  <span class="text-white font-semibold">9:00 - 13:00</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-300">Domingos:</span>
+                  <span class="text-red-300 font-semibold">Cerrado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ubicación -->
+          <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">
+            <h4 class="text-white font-semibold mb-2 flex items-center">
+              <i class="fas fa-map-marker-alt text-red-400 mr-2"></i>
+              Ubicación
+            </h4>
+            <p class="text-gray-300 text-sm">
+              Lima, Perú
+            </p>
+            <button class="mt-2 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-lg text-xs transition-colors">
+              <i class="fas fa-directions mr-1"></i>
+              Ver Mapa
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de marcas aliadas -->
+    <div class="border-t border-gray-700 bg-gray-900">
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <h3 class="text-center text-white font-bold mb-6 flex items-center justify-center">
+          <i class="fas fa-handshake text-blue-400 mr-2"></i>
+          Marcas Aliadas
+        </h3>
+        <div class="flex flex-wrap justify-center items-center gap-8 opacity-80">
+          <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <img src="http://www.ds3comunicaciones.com/cisco/images/logo-cisco.gif" alt="Cisco" class="h-8 object-contain" />
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <img src="http://www.ds3comunicaciones.com/belden/images/mikrotik_logo-100x24.png" alt="MikroTik" class="h-8 object-contain" />
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <img src="http://www.ds3comunicaciones.com/belden/images/ubnt_logo-100x47.png" alt="Ubiquiti" class="h-8 object-contain" />
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <img src="http://www.ds3comunicaciones.com/belden/images/D-Link_Logo-100x26.jpg" alt="D-Link" class="h-8 object-contain" />
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow-lg transform hover:scale-105 transition-all">
+            <img src="http://www.ds3comunicaciones.com/belden/images/ALFA_logo1.gif" alt="Alfa" class="h-8 object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-700 bg-black">
+      <div class="max-w-7xl mx-auto px-4 py-6">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div class="flex items-center space-x-4">
+            <p class="text-gray-400 text-sm">
+              © 2025 DS3 Comunicaciones. Todos los derechos reservados.
+            </p>
+          </div>
+          
+          <div class="flex items-center space-x-6 text-sm">
+            <a href="#" class="text-gray-400 hover:text-blue-300 transition-colors">Términos</a>
+            <a href="#" class="text-gray-400 hover:text-blue-300 transition-colors">Privacidad</a>
+            <a href="#" class="text-gray-400 hover:text-blue-300 transition-colors">Cookies</a>
+          </div>
+
+          <div class="flex items-center space-x-2">
+            <span class="text-gray-500 text-xs">Powered by</span>
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 px-3 py-1 rounded-full">
+              <span class="text-white font-bold text-xs">Astro ⚡</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <div class="fixed bottom-6 left-6 z-50">
+    <a href="https://wa.me/51994428965?text=Hola,%20me%20interesa%20el%20Switch%20Cisco%20C9200L-24P-4G-E" 
+       target="_blank"
+       class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-110 flex items-center group">
+      <i class="fab fa-whatsapp text-2xl mr-2"></i>
+      <span class="hidden group-hover:block whitespace-nowrap bg-white text-green-600 px-3 py-1 rounded-lg text-sm font-semibold shadow-lg absolute left-16 top-1/2 transform -translate-y-1/2">
+        Consultar por WhatsApp
+      </span>
+    </a>
+  </div>
+
+</BaseLayout>
