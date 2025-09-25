@@ -1,10 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Se ejecuta en push a main
   push:
     branches: [ main ]
-  # Permite ejecutar manualmente
   workflow_dispatch:
 
 permissions:
@@ -12,7 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-# Solo un deploy a la vez
 concurrency:
   group: "pages"
   cancel-in-progress: false
